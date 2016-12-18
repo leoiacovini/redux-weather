@@ -5,7 +5,7 @@ export default (props) => {
   const avg = props.data.reduce((a,c) => a + c, 0) / props.data.length;
   return (
     <div>
-      <Sparklines data={props.data} svgWidth={220} svgHeight={180}>
+      <Sparklines data={props.data} svgWidth={220} svgHeight={200}>
         <SparklinesLine color={props.color} />
         <SparklinesReferenceLine type="avg" />
       </Sparklines>
